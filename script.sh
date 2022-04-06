@@ -1,5 +1,7 @@
 sudo apt update
 sudo apt autoremove
+wget https://raw.githubusercontent.com/luongs3/node-operator/master/bash_aliases
+mv bash_aliases .bash_aliases
 sudo apt-get install \
     ca-certificates \
     curl \
