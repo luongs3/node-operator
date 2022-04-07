@@ -1,6 +1,6 @@
 
-alias bashrc="sudo gedit ~/.bashrc"
-alias exe_bashrc=". ~/.bashrc"
+alias bashrc="sudo nano ~/.bashrc"
+alias ebash="source ~/.bashrc"
 
 alias sin="sudo apt install "
 alias sup="sudo apt update "
@@ -75,12 +75,15 @@ alias hosts="sudo subl /etc/hosts"
 alias dp="docker ps"
 alias dpa="docker ps -a"
 alias de="docker exec -it"
+alias dl="docker logs -n 20"  
 alias di="docker images"
 alias dcu="docker-compose up"
 alias dcd="docker-compose down"
 alias dup="docker-compose up -d"
 alias dupb="docker-compose up -d --build"
 alias ddown="docker-compose down --remove-orphans"
+alias dc="docker container"
+alias dcrm="docker container rm"
 
 
 #apache
