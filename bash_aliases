@@ -1,4 +1,3 @@
-
 alias bashrc="sudo nano ~/.bashrc"
 alias ebash="source ~/.bashrc"
 
@@ -41,9 +40,7 @@ alias gcr="git checkout --"
 alias gd="git diff"
 alias gs="git status"
 alias gl="git log --oneline -10"
-
 alias gf="git fetch"
-
 alias gr="git reset"
 alias grs="git reset --soft HEAD~"
 alias grh="git reset --hard"
@@ -84,6 +81,8 @@ alias dupb="docker-compose up -d --build"
 alias ddown="docker-compose down --remove-orphans"
 alias dc="docker container"
 alias dcrm="docker container rm"
+alias dcs="docker container stop"
+alias dcr="docker container restart"
 
 
 #apache
