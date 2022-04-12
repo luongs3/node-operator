@@ -1,5 +1,5 @@
 alias bashrc="sudo nano ~/.bashrc"
-alias ebash="source ~/.bashrc"
+alias ebash="sh ~/.bashrc"
 
 alias sin="sudo apt install "
 alias sup="sudo apt update "
