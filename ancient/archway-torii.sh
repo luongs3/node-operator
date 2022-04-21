@@ -1,5 +1,7 @@
 #Tut: https://mzonder.notion.site/ARCHWAY-GENTX-submition-torii-1-787e7a7d7f9c40808c6eaddca01b7b2c
 # clone repo
+echo "export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin" >> $HOME/.bashrc
+
 git clone https://github.com/archway-network/archway
 cd archway
 git checkout main
@@ -74,3 +76,18 @@ git clone https://github.com/archway-network/testnet-signer.git
 cd testnet-signer
 make install
 testnet-signer sign_id wallet_name
+
+# Archway: smart contract platform on Cosmos, raised $21M by CoinFund & Hashed
+# - tut 1: https://docs.archway.io/docs/validator/overview/
+# - tut 2: https://nodes.migoi.io/en/latest/archway.html
+# - tut 3 (incentive testnet): https://philabs.notion.site/Validator-Setup-Guide-10502472842e4ad8bf7fb7ec68afe07a
+# - Rewards: https://philabs.notion.site/Challenges-d496563804714776b7c361493f41f5d9
+# - vps: luongnp5 gc instance-1
+# - Validator name: cgnguyen-val
+# - wallet: cgnguyen
+# - pass phrase: cgnguyen
+# - name: cgnguyen
+# - type: local
+# - address: archway1tdxv977wqtne0yj8kn23k3zpu66npnw9jms38d
+# - pubkey: '{"@type":"/cosmos.crypto.secp256k1.PubKey","key":"A2nV4CkPbpLeedkiKiOXNJagGsC7lRiTCm42pN1kNHJR"}'
+# -   mnemonic: "comfort evidence method grocery state warm noble word budget bind become maze glimpse ceiling cram remove doctor stock please similar pioneer echo echo purchase"

@@ -44,8 +44,6 @@ docker exec -it cgnguyen \
   --fees 1uaugust
 
 
-
-
 # Cleanup: Remove old genesis.json if existed
 rm -f ~/.archway/config/genesis.json
 docker rm -f archway 2&>/dev/null
