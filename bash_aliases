@@ -103,3 +103,7 @@ alias ku="kubectl -n uat"
 alias kuc="kubectl -n uat get configmap -o yaml"
 alias kus="kubectl -n uat get secret -o yaml"
 
+# system service
+alias systemr="sudo systemctl daemon-reload
+sudo systemctl enable kyved
+sudo systemctl start kyved
