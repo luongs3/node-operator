@@ -15,7 +15,7 @@ After=network-online.target
 [Service]
 User=root
 WorkingDirectory=/home/luongnp5_gmail_com/kyve/
-ExecStart=/home/luongnp5_gmail_com/kyve/evm-linux -m "tribe surround rally foot distance measure hybrid fancy wool amount nothing coconut" -k /home/luongnp5_gmail_com/kyve/arweave.json -p 1 -v -s 2050
+ExecStart=/home/luongnp5_gmail_com/kyve/evm-linux -m "tribe surround rally foot distance measure hybrid fancy wool amount nothing coconut" -k /home/luongnp5_gmail_com/kyve/arweave.json -p 3 -v -s 2070
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535
@@ -26,6 +26,12 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl enable kyved
 sudo systemctl start kyved
+# sudo systemctl stop kyved
 # View logs
 sudo systemctl status kyved
 journalctl -f -u kyved
+
+
+# ---- Kyve Korellia ----
+# Detail: https://blog.kyve.network/kyve-launches-incentivized-testnet-mission-korellia-d53280a17c6d
+# Register: https://app.kyve.network/#/
