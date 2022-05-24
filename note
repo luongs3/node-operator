@@ -1,0 +1,5 @@
+# Update disk size on the fly without restarts
+- Increase disk size from Google console first
+- SSH inside VM : sudo growpart /dev/sda 1
+- Resize your file system : sudo resize2fs /dev/sda1
+- Verify : df -h

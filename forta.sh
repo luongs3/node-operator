@@ -1,6 +1,7 @@
 # announcemen: https://forta.org/blog/announcing-fortification/
 # Dashboard: https://forta.notion.site/Forta-Fortification-Network-4a8af3ab4aea480d993e5095ad0ed746
 # Phase 1: Fortification
+# vps: luongnp5 vm subspace
 # 1. Install and Configure Docker
 # Install Docker (at least v20.10)
 # Add a file called daemon.json to your /etc/docker directory with the following contents:
@@ -73,4 +74,6 @@ forta status
 # Moniter:
 - https://explorer.forta.network/network
 - SLA: https://docs.forta.network/en/latest/sla-api/
+- Check SLA online: http://alt.pp.ua/forta/
 - GET https://api.forta.network/stats/sla/scanner/0x2a6AD798acb2a9b718a5b28071D26335F4702382
+- Check SLA with curl: curl -s https://api.forta.network/stats/sla/scanner/0x2a6AD798acb2a9b718a5b28071D26335F4702382 | jq | head

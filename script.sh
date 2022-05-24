@@ -20,6 +20,8 @@ sudo chmod +x /usr/local/bin/docker-compose
 sudo chown $(whoami):$(whoami) /var/run/docker.sock # ubuntu 20
 sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
+sudo gpasswd -a $USER docker
+newgrp docker
 
 # go
 wget https://go.dev/dl/go1.18.linux-amd64.tar.gz
