@@ -20,7 +20,7 @@ After=network-online.target
 [Service]
 User=root
 WorkingDirectory=/home/luongnp5_gmail_com/kyve/
-ExecStart=/home/luongnp5_gmail_com/kyve/kyve-cosmos-linux -m "tribe surround rally foot distance measure hybrid fancy wool amount nothing coconut" -k /home/luongnp5_gmail_com/kyve/arweave.json -p 10 -v -s 2400
+ExecStart=/home/luongnp5_gmail_com/kyve/kyve-cosmos-linux -m "tribe surround rally foot distance measure hybrid fancy wool amount nothing coconut" -k /home/luongnp5_gmail_com/kyve/arweave.json -p 11 -v -s 2400
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=65535

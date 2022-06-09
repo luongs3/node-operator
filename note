@@ -1,5 +1,13 @@
-# Update disk size on the fly without restarts
+## Update disk size on the fly without restarts
 - Increase disk size from Google console first
 - SSH inside VM : sudo growpart /dev/sda 1
 - Resize your file system : sudo resize2fs /dev/sda1
 - Verify : df -h
+
+## Upload/Download files from google drive
+wget https://github.com/prasmussen/gdrive/releases/download/2.1.1/gdrive_2.1.1_linux_386.tar.gz
+tar -xvf gdrive_2.1.1_linux_386.tar.gz
+# authen 
+./gdrive about
+# upload file
+./gdrive upload /home/documents/file_name.zip
