@@ -11,3 +11,32 @@ tar -xvf gdrive_2.1.1_linux_386.tar.gz
 ./gdrive about
 # upload file
 ./gdrive upload /home/documents/file_name.zip
+
+# Gen ssh key
+ssh-keygen -t rsa -C digibase@tnv.edu.vn
+
+# Google cloud init
+gcloud auth login
+
+Install memory usage monitor: https://cloud.google.com/monitoring/agent/monitoring/installation
+Add meta key: enable-oslogin: true
+Add ssh key: Compute Engine -> Metadata -> add ssh keys
+Add OS login key:
+```
+gcloud compute os-login ssh-keys add \
+    --key-file=/Users/luong/.ssh/digibase.pub \
+    --project=light-processor-354603 \
+    --ttl=300d
+```
+
+- gid: '672611133'
+  homeDirectory: /home/digibase_tnv_edu_vn
+  operatingSystemType: LINUX
+  primary: true
+  uid: '672611133'
+  username: digibase_tnv_edu_vn
+
+# Install packages
+wget https://raw.githubusercontent.com/luongs3/node-operator/master/script.sh
+sh script.sh
+

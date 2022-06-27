@@ -21,7 +21,7 @@ tail -f node.log
 # Check sync at: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fna.gemini-1b.subspace.network%2Fws#/explorer
 
 # Replace `WALLET_ADDRESS` below with your account address from Polkadot.js wallet (Step II.3)
-nohup ./subspace-farmer-ubuntu-x86_64-gemini-1b-2022-june-05 farm --reward-address 5H97wT9PQjYeZ2HSUtcHhQrWU2dgNqU4PXWnYyoKhxN1WFqk --plot-size 40G  > farm.log &
+nohup ./subspace-farmer-ubuntu-x86_64-gemini-1b-2022-june-05 farm --reward-address 5H97wT9PQjYeZ2HSUtcHhQrWU2dgNqU4PXWnYyoKhxN1WFqk --plot-size 100G  > farm.log &
 
 # View log file
 tail -f farm.log
