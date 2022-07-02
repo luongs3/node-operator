@@ -13,10 +13,11 @@ tar -xvf gdrive_2.1.1_linux_386.tar.gz
 ./gdrive upload /home/documents/file_name.zip
 
 # Gen ssh key
-ssh-keygen -t rsa -C digibase@tnv.edu.vn
+ssh-keygen -t rsa -C viettravelcomm@gmail.com
 
 # Google cloud init
 gcloud auth login
+# project: cohesive-link-355107
 
 Install memory usage monitor: https://cloud.google.com/monitoring/agent/monitoring/installation
 Add meta key: enable-oslogin: true
@@ -24,17 +25,18 @@ Add ssh key: Compute Engine -> Metadata -> add ssh keys
 Add OS login key:
 ```
 gcloud compute os-login ssh-keys add \
-    --key-file=/Users/luong/.ssh/digibase.pub \
-    --project=light-processor-354603 \
+    --key-file=/Users/luong/.ssh/viettravel.pub \
+    --project=cohesive-link-355107 \
     --ttl=300d
 ```
-
-- gid: '672611133'
-  homeDirectory: /home/digibase_tnv_edu_vn
-  operatingSystemType: LINUX
-  primary: true
-  uid: '672611133'
-  username: digibase_tnv_edu_vn
+  - accountId: cohesive-link-355107
+    gid: '1749600688'
+    homeDirectory: /home/viettravelcomm_gmail_com
+    name: users/viettravelcomm@gmail.com/projects/cohesive-link-355107
+    operatingSystemType: LINUX
+    primary: true
+    uid: '1749600688'
+    username: viettravelcomm_gmail_com
 
 # Install packages
 wget https://raw.githubusercontent.com/luongs3/node-operator/master/script.sh

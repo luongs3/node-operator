@@ -10,6 +10,7 @@ tar -xvf gdrive_2.1.1_linux_386.tar.gz
 sudo apt install \
     ca-certificates \
     curl \
+    unzip \
     gnupg \
     lsb-release
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg

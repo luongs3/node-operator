@@ -5,6 +5,9 @@
 # 1. Install and Configure Docker
 # Install Docker (at least v20.10)
 # Add a file called daemon.json to your /etc/docker directory with the following contents:
+cd /etc/docker
+sudo touch daemon.json
+sudo nano daemon.json
 ```
 {
    "default-address-pools": [
@@ -35,11 +38,15 @@ sudo apt-get install forta
 forta init --passphrase cgnguyen
 # Scanner address: 0x2a6AD798acb2a9b718a5b28071D26335F4702382 (subspace)
 # Scanner address: 0x876ae6A8F4eC2BF3fF2dE24D975A814e3648343f (instance-2)
-# Successfully initialized at /home/luongnp5_gmail_com/.forta
+# Successfully initialized at /home/digibase_tnv_edu_vn/.forta
 - Send some matic to 0x2a6AD798acb2a9b718a5b28071D26335F4702382
+cd /etc/systemd/system
+sudo mkdir forta.service.d
+cd forta.service.d
+sudo touch env.conf
 sudo nano /etc/systemd/system/forta.service.d/env.conf
 [Service]
-Environment="FORTA_DIR=/home/luongnp5_gmail_com/.forta"
+Environment="FORTA_DIR=/home/digibase_tnv_edu_vn/.forta"
 Environment="FORTA_PASSPHRASE=cgnguyen"
 
 # setup config.yml
